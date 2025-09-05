@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script type="text/python" src="{{ request.url_for('static', path='push.py') }}"></script>
+</script>
+{% endblock %}
+{% block content %}
+<p id="message" style="font-size: 100px;">
+    Não chegou NADA
+</p>
+{% endblock %} 
